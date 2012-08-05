@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>easyread demo——www.luger.me</title>
+<style type="text/css">
+.titleIcon {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -41px;
+	right: -26px;
+}
+.sv_image_1 {
+	background: url("images/1.gif") no-repeat scroll center 0 transparent;
+}
+.sv_image_2 {
+	background: url("images/2.gif") no-repeat scroll center 0 transparent;
+}
+.sv_image_3 {
+	background: url("images/3.gif") no-repeat scroll center 0 transparent;
+}
+.sv_image_4 {
+	background: url("images/4.gif") no-repeat scroll center 0 transparent;
+}
+.sv_image_5 {
+	background: url("images/5.gif") no-repeat scroll center 0 transparent;
+}
+.sv_image_6 {
+	background: url("images/6.gif") no-repeat scroll center 0 transparent;
+}
+a:focus {
+	outline: none;
+}
+img {
+	border: 0;
+}
+strong, var {
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+h1, h3 {
+	font-size: 100%;
+}
+input, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+a {
+	color: #333435;
+}
+a:hover {
+	color: #e23a0a;
+}
+.fr {
+	float: right;
+}
+#art_main1 {
+	margin-right: 285px;
+	min-height:800px;
+}
+.art_white_bg {
+	padding: 15px;
+	border: 1px solid #e5e5e5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 4px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+.art_title {
+	position: relative;
+	margin-bottom: 20px;
+}
+.art_title h1 {
+	font-size: 22px;
+	line-height: normal;
+	color: #404040;
+	text-shadow: 1px 1px 2px #b5b5b5;
+}
+.art_title span.face_img {
+	float: left;
+	padding: 0 10px 0 0;
+	border-right: 1px #E5E5E5 solid;
+	display: inline;
+	margin-right: 10px;
+}
+.art_title span.face_img img {
+	padding: 2px;
+	border: 1px #dbdbdb solid;
+}
+.art_title p.info small {
+	font-size: 12px;
+	padding: 0 2px 0 6px;
+	color: #7C7A7A;
+}
+.art_title p.info {
+	color: #e23a0a;
+}
+.article-tag {
+	border: 1px solid #e5e5e5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 4px;
+	height: 35px;
+}
+.article_tags {
+	line-height: 35px;
+	padding-left: 5px;
+}
+.article-tag a {
+	font-size: 13px;
+}
+.article_content {
+	line-height: 200%;
+	color: #444;
+	font-size: 13px;
+	position: relative;
+	overflow: hidden;
+}
+.article_content h3 {
+	margin: 10px;
+	height: 25px;
+	line-height: 25px;
+	padding: 1px 8px;
+	font-size: 14px;
+	color: #fff;
+	background: #A0A0A0;
+	border: 1px solid #e5e5e5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 4px;
+	line-height: 25px;
+}
+.article_content p {
+	text-indent: 2em;
+	margin: 5px 0 10px;
+	line-height: 180%;
+	color: #444;
+	font-size: 16px;
+}
+.article_content a:link, .article_content a:active, .article_content a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+.article_content a:hover {
+	color: #E8501F;
+	border-bottom: 1px dotted #ccc;
+}
+.article_content strong {
+	color: #232323;
+	font-weight: bold;
+	font-size: 13px;
+}
+.article_content blockquote {
+	margin: 15px;
+	padding: 10px;
+	border-left: 8px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #fafafa;
+	display: block;
+	clear: right;
+}
+.postcopyright {
+	margin: 15px 0;
+	border: 1px solid #e5e5e5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 4px;
+	line-height: 25px;
+	font-size: 13px;
+	display: inline-block;
+	width: 99%;
+}
+.postcopyright p {
+	font-size: 13px;
+}
+.con_pretext {
+	margin: 15px 0;
+	border-top: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+	background: #fff;
+	padding: 10px 3px;
+	position: relative;
+}
+.con_pretext li {
+	color: #666;
+}
+.con_pretext li a {
+	color: #BC0808;
+}
+.but_down {
+	margin: 10px 0;
+	display: inline-block;
+}
+.but_down a {
+	float: left;
+	display: block;
+	background: transparent url(images/dlbutton.png) no-repeat left top;
+	border: none;
+	padding: 0 0 0 60px;
+	height: 33px;
+	font-family: 'Century Gothic', "Microsoft YaHei", Trebuchet MS, Arial, Tahoma, sans-serif;
+	color: #123;
+	text-decoration: none;
+	text-shadow: 0 1px 1px #fff;
+}
+.but_down a span {
+	float: left;
+	display: block;
+	background: transparent url(images/dlbutton.png) no-repeat right top;
+	padding: 0 10px 0 0;
+	line-height: 33px;
+	cursor: pointer;
+}
+.but_down a:hover {
+	color: #000;
+	text-shadow: 0 1px 1px #fff;
+	text-decoration:none;
+	background: transparent url(images/dlbutton.png) no-repeat left top;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-khtml-border-radius: 0px;
+}
+.savepdf {
+	margin:0px;
+}
+.mc_item {
+	float: left;
+	margin: 0 10px;
+	min-width: 64px;
+	padding: 5px;
+	text-align: center;
+}
+.sv_image {
+	display: block;
+	padding-top: 54px;
+	width:70px;
+}
+#moodComment {
+	clear: both;
+	height: 150px;
+	text-align:center;
+}
+.mood_box {
+	margin: 0 auto 0 auto;
+	width: 620px;
+}
+
+#art_main1 {
+	text-align:left;
+	font-size:12px;
+	font-family:'Microsoft Yahei', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;
+	color:rgb(19, 19, 19);
+	width:80%;
+	margin:0px auto 0px auto;
+}
+.read_outer{
+	position:fixed;
+	top:50px;
+	right:5px;
+	display:block;
+}
+.read{
+	display: block;
+	padding: 2px;
+	border: 1px solid gray;
+	cursor: pointer;
+}
+</style>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script class="jsbin" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyread.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$(".read").easyread({
+    			contentClass:"article_content",
+    			titleClass:"article_title"
+    		});        		
+    	});
+	</script>
+</head>
+<body>
+<div id="art_main1" class="art_white_bg">
+  <div class="art_title"> <img src="images/original.png" class="titleIcon" original="http://www.luger.me/wp-content/plugins/wp-title-icon/img/original.png" data-pinit="registered"> <span class="face_img"><img alt="" src="http://0.gravatar.com/avatar/c0c714a703e4c28260b197428dfed8ad?s=50&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" class="avatar avatar-50 photo" height="50" width="50" original="http://0.gravatar.com/avatar/c0c714a703e4c28260b197428dfed8ad?s=50&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G"></span>
+    <h1 class="article_title">Cookies访问规则</h1>
+    <p class="info"> <small>时间:</small>12-07-22 <small>栏目:</small><a href="http://www.luger.me/topics/web" title="查看 Web 的全部文章" rel="category tag">Web</a>, <a href="http://www.luger.me/topics/web/script" title="查看 脚本语言 的全部文章" rel="category tag">脚本语言</a> <small>作者:</small>luger <small>评论:</small><var class="ds-comments-number" data-thread-identifier="391 http://www.luger.me/?p=391">0</var> <small>点击:</small> 102 次 </p>
+    <!-- /info --> 
+  </div>
+  <div class="article_content">
+    <div class="article-tag">
+      <div class="but_down fr savepdf"> <a class="vtip" title="将文章保存为PDF格式的文件到本地&lt;br&gt;保存下来慢慢看" id="saveaspdf" href="#"><span>文章另存为PDF</span></a> </div>
+      <div class="article_tags"><strong>您还可以继续浏览和</strong> <a href="http://www.luger.me/tag/cookie" rel="tag">cookie</a><strong> 相关的文章</strong></div>
+    </div>
+    <div class="clear"></div>
+    <p>前几天在博客上加了个最近浏览的Widget，原理是这样的当访客打开一个文章页面的时候利用jQuery将访客访问文章的标题和url存入访客本地的cookies中，然后Widget中显示的时候讲存在访客本地的cookies的内容读出来即可，但是写完之后发现了个奇怪的问题，那就是</p>
+    <p>只有文章详细页面能够列出访客最近读过的文章，但是主页一直不能显示。于是就上网查了查Cookies的访问规则，现在把其访问规则整理一下，整理后的如下</p>
+    <h3>Cookie访问规则</h3>
+    <blockquote>
+      <p>加入我是在<a href="http://www.luger.me/archives/314.html">http://www.luger.me/archives/314.html</a> 这个url中存入的cookies，那么其存入的cookies能够被同意路径下的或者子路径下的地址访问到但是上级路径却访问不到。简单地说就是<a href="#">http://www.luger.me/archives/***.html</a> 或者&nbsp;<a href="#">http://www.luger.me/archives/***/***.**</a> 访问到 但是<a href="#"> http://www.luger.me/index.htm</a>却访问不到</p>
+    </blockquote>
+    <p>这就是为什么主页不能显示最近浏览记录的问题了</p>
+    <p>Ps：说个闲话 &nbsp;最近博客模板正在修改中，可能经常打不开，请谅解！</p>
+    <div id="moodComment">
+      <h3>请选择你看完该文章的感受:</h3>
+      <div class="mood_box"><span class="mc_item">0<a class="sv_image_1 sv_image" onclick="setMycookie('good',391);updateMoodComment('good');" href="javascript:void(0)">不错</a>
+        <input type="radio" onclick="setMycookie('good',391);updateMoodComment('good');">
+        </span><span class="mc_item">1<a class="sv_image_2 sv_image" onclick="setMycookie('great',391);updateMoodComment('great');" href="javascript:void(0)">超赞</a>
+        <input type="radio" onclick="setMycookie('great',391);updateMoodComment('great');">
+        </span><span class="mc_item">0<a class="sv_image_3 sv_image" onclick="setMycookie('bored',391);updateMoodComment('bored');" href="javascript:void(0)">无聊</a>
+        <input type="radio" onclick="setMycookie('bored',391);updateMoodComment('bored');">
+        </span><span class="mc_item">0<a class="sv_image_4 sv_image" onclick="setMycookie('nonsense',391);updateMoodComment('nonsense');" href="javascript:void(0)">扯淡</a>
+        <input type="radio" onclick="setMycookie('nonsense',391);updateMoodComment('nonsense');">
+        </span><span class="mc_item">0<a class="sv_image_5 sv_image" onclick="setMycookie('notunderstand',391);updateMoodComment('notunderstand');" href="javascript:void(0)">不解</a>
+        <input type="radio" onclick="setMycookie('notunderstand',391);updateMoodComment('notunderstand');">
+        </span><span class="mc_item">0<a class="sv_image_6 sv_image" onclick="setMycookie('passing',391);updateMoodComment('passing');" href="javascript:void(0)">路过</a>
+        <input type="radio" onclick="setMycookie('passing',391);updateMoodComment('passing');">
+      </span></div>
+    </div>
+    <div class="clear"></div>
+    <div class="postcopyright">
+      <p><strong> 声明: </strong> 本文由(<a href="http://www.luger.me"> luger </a>)原创编译，转载请保留链接: <a href="http://www.luger.me/archives/391.html" title="Cookies访问规则">Cookies访问规则</a></p>
+    </div>
+  </div>
+  <!--正文-->
+  <div class="con_pretext">
+    <ul>
+      <li class="first">上一篇：<a href="http://www.luger.me/archives/379.html" rel="prev">清华工科男的感人支教故事：我在清华等你来！</a> </li>
+      <li class="last">下一篇：<a href="http://www.luger.me/archives/395.html" rel="next">看完你们一定会喜欢她</a></li>
+    </ul>
+  </div>
+  <div class="mood_box">
+  	<iframe src="http://www.luger.me/luger/adOnly/ad.html" align="center" width="780px" height="90" id="frame" name="frame" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <div class="read_outer"><a class="read">阅读模式</a></div>
+</body>
+</html>

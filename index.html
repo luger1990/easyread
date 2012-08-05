@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>easyread</title>
+        <style type="text/css">
+a:focus{
+	outline: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	border: 0;
+}
+li{
+	list-style: none;
+}
+h1,h3{
+	font-size: 100%;
+}
+input,textarea,select{
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+a{
+	outline: none;
+	text-decoration: none;
+}
+a{
+	color: #333435;
+}
+a:hover{
+	color: #e23a0a;
+}
+#art_main1{
+	margin-right: 285px;
+	min-height:800px;
+}
+.art_white_bg{
+	padding: 15px;
+	border: 1px solid #e5e5e5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 4px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+.art_title{
+	position: relative;
+	margin-bottom: 20px;
+}
+.art_title h1{
+	font-size: 22px;
+	line-height: normal;
+	color: #404040;
+	text-shadow: 1px 1px 2px #b5b5b5;
+}
+.article_content{
+	line-height: 200%;
+	color: #444;
+	font-size: 13px;
+	position: relative;
+	overflow: hidden;
+}
+.article_content h3{
+	margin: 10px;
+	height: 25px;
+	line-height: 25px;
+	padding: 1px 8px;
+	font-size: 14px;
+	color: #fff;
+	background: #A0A0A0;
+	border: 1px solid #e5e5e5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 4px;
+	line-height: 25px;
+}
+.article_content p{
+	text-indent: 2em;
+	margin: 5px 0 10px;
+	line-height: 180%;
+	color: #444;
+	font-size: 16px;
+}
+.article_content a:link,.article_content a:active,.article_content a:visited{
+	color: #09C;
+	text-decoration: none;
+}
+.article_content a:hover{
+	color: #E8501F;
+	border-bottom: 1px dotted #ccc;
+}
+.article_content table{
+	width: 100%
+}
+.article_content table,.article_content td{
+	border: 1px solid #ddd;
+	line-height: 16px;
+	font-size: 12px;
+}
+.article_content td{
+	padding: 8px
+}
+.codecolorer{ padding: 5px; text-align: left; }
+.codecolorer-container{ margin-bottom: 10px; text-align: left; border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px; }
+.codecolorer,.codecolorer *,.codecolorer-container,.codecolorer-container *{ font-family: "Consolas", "Monaco", "Courier New", Courier, monospace;
+        font-size: 15px;
+		text-shadow:none;
+      }
+.codecolorer-container table{ border: 0px; }
+.codecolorer-container table td{ margin: 0px; padding: 0px; border: 0px; }
+.codecolorer-container table td.line-numbers{ padding: 5px; text-align: right; }
+.codecolorer-container table td.line-numbers div{ width: 23px; }
+.codecolorer-container{ border: 1px solid #9F9F9F; }
+.codecolorer-container table td.line-numbers{ color: #888888; background-color: #EEEEEE; border-right: 1px solid #9F9F9F; }
+.codecolorer-container,.codecolorer{ color: #000000; background-color: #F1F1F1; }
+.codecolorer .st0{ color: #A31515;}
+.codecolorer .kw2{ color: #2060A0; }
+.codecolorer .kw3{ color: #008080; }
+.codecolorer .sy0{ color: #000000; }
+.mac-classic,.mac-classic .codecolorer{ color: #000000; background-color: #c7edcc; }
+.mac-classic .codecolorer .st0{ color: #A31515; }
+.mac-classic .codecolorer .kw2{ color: #0000FF; }
+.mac-classic .codecolorer .kw3{ color: #FF0000; }
+.mac-classic .codecolorer .sy0{ color: #000000; }
+.mac-classic .html4strict .st0{ color: #0000FF; }
+
+.mood_box{
+margin: 0 auto 0 auto;
+width: 620px;
+}
+#art_main1{text-align:left;font-size:12px;font-family:'Microsoft Yahei', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;color:rgb(19, 19, 19);margin: 0px auto 0px auto;width: 80%;}
+</style>
+</head>
+<body>
+<div id="art_main1" class="art_white_bg"> 
+			            <div class="art_title">
+				<h1>easyread——开启网站阅读模式</h1>
+			</div>
+			<div class="article_content">
+				<p>easyread是我看了遨游浏览器自带的“阅读模式”后，感觉这个功能挺好的，所以想在自己的<a href="http://www.luger.me/" target="_blank">博客</a>上添加这个功能。于是就在自己的博客上完成了这个功能。这时候一个朋友感觉这个效果也不错，于是就问我要了源码。我想可不可以做成像网上的其他jQuery插件一样，用户可以把这个功能当成一个jQuery插件，用的时候只需要引入js和css等，然后自己设置相关的代码呢？于是我就开始着手将其改成一个jQuery插件的形式。因为是第一次写jQuery插件，可能很多地方都不符合jQuery插件的规范，希望各位朋友想我多多提出宝贵的建议，让这个插件更加完善。最后因为这个插件是为了方便浏览者阅读的于是就给他起了个名字叫做<a title="easyread" href="http://www.luger.me/easy-read" target="_blank">easyread</a>。</p>
+<h3>使用示例：</h3>
+<pre><div class="codecolorer-container html4strict mac-classic" style="overflow:auto;white-space:nowrap;width:99%;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br></div></td><td><div class="html4strict codecolorer">&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/link.html"><span class="kw2">link</span></a> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"stylesheet"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/css"</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"../style.css"</span>&gt;</span><br>
+&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"../js/jquery.js"</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span><br>
+&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"../js/jquery.easyread.js"</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span><br>
+&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span>&gt;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp;$(document).ready(function(){<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; $(".read").easyread({<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; titleClass:"article_content",<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; contentClass:"article_title"<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; });<br>
+&nbsp; &nbsp; &nbsp; &nbsp;});<br>
+&nbsp; &nbsp; <span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span></div></td></tr></tbody></table></div>
+</pre>
+<h3>参数详解：</h3>
+<p>titleClass：标题所在容器的类名</p>
+<p>contentClass：正文所在容器的类名</p>
+<p><a href="http://www.luger.me/luger/easyread/demo/demo.html" target="_blank">Demo1</a></p>
+<p><a href="demo/demo.html" target="_blank">Demo2</a></p>
+我的联系方式：luger1990@gmail.com
+			</div><!--正文-->          
+                       
+			
+</body>
+</html>
